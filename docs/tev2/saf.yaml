@@ -7,7 +7,7 @@
 #
 scope:
   scopetag: tev2 # identifier that curators have determined for this terminology
-  scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
+  scopedir: https://github.com/datasoc-ltd/framework/tree/master/docs/tev2  # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
   mrgfile: mrg.mrgtest.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
@@ -36,6 +36,9 @@ scopes:  #
   - ctwg
   - toip-ctwg
   scopedir: https://github.com/trustoverip/ctwg # URL of the scope-directory
+- scopetags: # definition of (scope)tag(s) that are used within this scope to refer to a specific terminology
+  - sihtev2
+  scopedir: https://github.com/datasoc-ltd/ctwg-tev2 # URL of the scope-directory
 #
 # The third section specifies the versions that are actively maintained by the curators.
 # For each version, the set of terms is selected that constitute the terminology.
@@ -45,6 +48,7 @@ versions:
 - vsntag: mrgtest # this version MUST only be used for testing the MRG generator
   termselcrit:
   - "*@tev2" # import all tev2 terms.
+  - "termids[test1]@sihtev2"
 - vsntag: v0.1
   termselcrit:
   - "tags[identify,ppa]@essif-lab"
