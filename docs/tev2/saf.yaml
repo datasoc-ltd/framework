@@ -38,7 +38,7 @@ scopes:  #
   scopedir: https://github.com/trustoverip/ctwg # URL of the scope-directory
 - scopetags: # definition of (scope)tag(s) that are used within this scope to refer to a specific terminology
   - sihtev2
-  scopedir: https://github.com/datasoc-ltd/ctwg-tev2/tree/master # URL of the scope-directory
+  scopedir: https://github.com/datasoc-ltd/ctwg-tev2 # URL of the scope-directory
 #
 # The third section specifies the versions that are actively maintained by the curators.
 # For each version, the set of terms is selected that constitute the terminology.
