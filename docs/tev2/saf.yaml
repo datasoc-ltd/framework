@@ -49,6 +49,7 @@ versions:
   termselcrit:
   - "*@tev2" # import all tev2 terms.
   - "terms[test1]@sihtev2:mrgtest"
+  - "-terms[corpus]" # exclude corpus
 - vsntag: v0.1
   termselcrit:
   - "tags[identify,ppa]@essif-lab"
